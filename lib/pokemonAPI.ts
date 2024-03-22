@@ -9,3 +9,9 @@ export async function getPokemonList() {
 }
 
 // getPokemon -> given a string "pikachu", get the the inmformation of pikachu
+export async function getPokemon(name: string) {
+  // pokemon/ditto
+  const response = await fetch(POKEMON_API + "pokemon/" + name);
+  const data = await response.json();
+  return data;
+}
