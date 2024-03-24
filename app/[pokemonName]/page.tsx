@@ -2,9 +2,15 @@ import { getPokemon } from "@/lib/pokemonAPI";
 import Image from "next/image";
 import { PokemonImage } from "@/components/pokemon-image";
 import {Progress} from "@/components/ui/progress";
+// localhost:3000/pikachu
+
 // pokemonName
 
 // pokemonName = "pikachu" -> show the Pikachu page
+
+// Vercel CLI -> We can fully deploy our application using the command line
+// If things are breaking for you (for any reason), go check out how to
+// deploy from github.
 
 export default async function PokemonPage({params} : {params: {pokemonName: string} }) {
   // Object destructuring
